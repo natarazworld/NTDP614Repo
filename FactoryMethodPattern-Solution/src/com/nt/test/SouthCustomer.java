@@ -1,0 +1,15 @@
+package com.nt.test;
+
+import com.nt.bike.BajajBike;
+import com.nt.factory.ChennaiBajajFactory;
+import com.nt.factory.method.BajajBikeFactory;
+
+public class SouthCustomer {
+
+	public static void main(String[] args) {
+	   BajajBikeFactory factory=new ChennaiBajajFactory();
+	   BajajBike bike=factory.orderBike("pulsor");
+	   bike.drive();
+	}
+
+}
