@@ -1,0 +1,18 @@
+CREATE TABLE "SYSTEM"."BD_HR_EMPLOYEE" 
+   (	"EMPNO" NUMBER(10,0) NOT NULL ENABLE, 
+	"ENAME" VARCHAR2(20 BYTE), 
+	"EADD" VARCHAR2(20 BYTE), 
+	"DESG" VARCHAR2(20 BYTE), 
+	 CONSTRAINT "BD_HR_EMPLOYEE_PK" PRIMARY KEY ("EMPNO"));
+	 ---------------------------------------------------------------------------------------------------
+	 
+	 CREATE TABLE "SYSTEM"."BD_FINANCE_EMPLOYEE" 
+   (	"EMPNO" NUMBER(10,0) NOT NULL ENABLE, 
+	"ENAME" VARCHAR2(20 BYTE), 
+	"EADD" VARCHAR2(20 BYTE), 
+	"DESG" VARCHAR2(20 BYTE), 
+	"SALARY" FLOAT(126), 
+	 CONSTRAINT "BD_FINANCE_EMPLOYEE_PK" PRIMARY KEY ("EMPNO"));
+	 -------------------------------------------------------------------------------------------------------------
+	    CREATE SEQUENCE  "SYSTEM"."BD_EMPNO_SEQ"  MINVALUE 1 MAXVALUE 1000 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
+	 
